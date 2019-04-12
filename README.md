@@ -15,6 +15,7 @@ npm install express-handlebars --save
 npm install bitcore-lib --save
 npm install bitcore-explorers --save
 npm install body-parser --save
+npm install chart.js
 npm install live-server --save //so this can run live 
 now drag and drop or pull these files whatever you feel like
 

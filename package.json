@@ -1,5 +1,5 @@
 {
-  "name": "markdale",
+  "name": "jobtest",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bitcoin-transaction": "^1.2.1",
     "bitcore-explorers": "^1.0.1",
     "bitcore-lib": "^0.13.19",
+    "body-parser": "^1.18.3",
+    "chart.js": "^2.8.0",
     "express": "^4.16.4",
-    "express-handlebars": "^3.0.2",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.4",
-    "secp256k1": "^3.6.2",
-    "uuid": "^3.3.2"
+    "express-handlebars": "^3.0.2"
   }
 }

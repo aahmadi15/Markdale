@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta charset = "UTF-8" />
+        <title>Markdale BlockCypher Transaction</title>
+        <link rel = "stylesheet" href = "./css/Formatter.css"/>
+
+        <script>
+            function transaction()
+            {
+                document.getElementById("transaction").action = "/buy";
+                document.getElementById("transaction").submit(); 
+            }
+
+            function chart(){
+                document.getElementById("transaction").action = "/chart";
+                document.getElementById("transaction").submit(); 
+            }
+        </script>
+        
+    </head>
+
+<body>
+
+    <form id = "transaction" method = "post" action = "/transaction">
+
+        <h1>Saboor Ahmadi</h1>
+    
+        <div class = "saboorTransaction">
+            <h3>Markdale BlockCypher Transaction</h3>
+            
+            <br />
+            <label>Address</label>
+            <br />
+            <br />
+            <input id = "address" name = "address" type = "text" required placeholder = "address"/>
+            <br />
+            <div>{{data.err}}</div>
+            <br />
+            <label>Second Address</label>
+            <br />
+            <br />
+            <input id = "address2" name = "address2" type = "text" required placeholder = "second address"/>
+            <br />
+            <br />
+
+            <label>Deposit to Address# 2</label>
+            <br />
+            <br />
+            <input id = "deposit" name = "deposit" type = "text" required placeholder = "Deposit"/>
+            <br />
+            <br />
+            <label>This is to check a Transaction</label>
+            <br />
+            <br />
+            <button id = "Create" type = "submit" onclick = "transaction()">Transaction</button>
+            </br>
+            </br>
+            <label>Chart js</label>
+            <br />
+            <br />
+            <button id = "Chart" type ="submit" onclick="chart()">Chart</button>
+        </div>      
+    </form>
+</body>
+</html>

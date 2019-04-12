@@ -1,0 +1,49 @@
+h1{
+    text-align:center;
+}
+
+h3{
+    text-align:center;
+}
+
+label{
+    margin:auto;
+    right : 80%;
+    position:absolute;
+}
+
+#Create{
+    margin:auto;
+    right : 80%;
+    position:absolute;
+}
+
+#address2{
+    margin:auto;
+    right : 80%;
+    position:absolute;
+}
+
+#deposit{
+    margin:auto;
+    right : 80%;
+    position:absolute;
+}
+
+#address{
+    margin:auto;
+    right : 80%;
+    position:absolute;
+}
+
+#Check{
+    margin:auto;
+    right : 80%;
+    position:absolute;
+}
+
+#Chart{
+    margin:auto;
+    right : 80%;
+    position:absolute;
+}

@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta charset = "UTF-8" />
+        <title>Markdale BlockCypher API</title>
+        <link rel = "stylesheet" href = "./css/Formatter.css"/>
+
+        <script>
+            function check()
+            {
+                document.getElementById("log").action = "/redirect";
+                document.getElementById("log").submit(); 
+            }
+
+            function transaction()
+            {
+                document.getElementById("log").action = "/transaction";
+                document.getElementById("log").submit(); 
+            }
+        </script>
+        
+    </head>
+
+<body>
+
+    <form id = "log" method = "post" action = "/">
+
+        <h1>Saboor Ahmadi</h1>
+    
+        <div class = "saboorLoginContent">
+            <h3>Markdale Management BlockCypher</h3>
+            
+            <br />
+            <label>Address</label>
+            <br />
+            <br />
+            <input id = "address" name = "address" type = "text" required placeholder = "address"/>
+            <br />
+            <div>{{data.err}}</div>
+            <br />
+            <label>Check if this address exists</label>
+            <br />
+            <br />
+             <button id = "Check"  onclick = "check()" type = "submit" >Check</button>
+            <br/>
+            <br />
+            <label>This is to redirect to transaction page</label>
+            <br />
+            <br />
+            <button id = "Create"  onclick = "transaction()" type = "submit" >Transaction</button>
+        </div>      
+    </form>
+</body>
+</html>

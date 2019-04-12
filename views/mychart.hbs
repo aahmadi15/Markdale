@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta http-equiv = "X-UA-Compatible" content="ie=edge">
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <title>My Chart.js Chart</title>
+</head>
+<body>
+    <form id = "chart" method = "post" action = "/chart">
+<div class = "container">
+    <canvas id = "myChart"></canvas>
+</div> 
+<script>
+    let myChart = document.getElementById('myChart').getContext('2d');
+    //global options
+    Chart.defaults.global.defaultFontFamily = 'Lato';
+    Chart.defaults.global.defaultFontSize = 18;
+    Chart.defaults.global.defaultFontColor = '#777';
+    let barChart = new Chart(myChart,{
+        type: 'bar',
+        data:{
+            labels:['Transaction 1', 
+            'Transaction 2',
+            'Transaction 3',
+            'Transaction 4'
+            ,'Transaction 5'
+            ,'Transaction 6'
+            ,'Transaction 7'], 
+            datasets:[{
+                label: 'Satoshis',
+                data:[
+                20000,
+                3988,
+                5676,
+                4554,
+                3988,
+                20000,
+                5000,          
+                ],
+                backgroundcolor:[
+                'rgba(255, 99, 132, 0.6)',
+                'rgba(55, 162, 235, 0.6)',
+                'rgba(255, 206, 86, 0.6)',
+                'rgba(75, 192, 192, 0.6)',
+                'rgba(153, 102, 64, 0.6)',
+                'rgba(255, 99, 132, 0.6)',
+                'rgba(75, 99, 122, 0.6)'
+                ],
+                borderWidth:1,
+                borderColor:'#777',
+                hoverBorderWidth:3,
+                hoverBorderColor:'#000'
+            }]
+        },
+        options:{
+            title:{
+                display:true,
+                text:'Bitcoin Transactions by mgNgSfeNjxYsLtY5SDE8XbetwUuwqrLjJ1',
+                fontSize:25
+            }
+        }
+    })
+</script>
+</form>
+</body>
+</html>
